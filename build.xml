@@ -2,7 +2,7 @@
 
 <project name="Using_Ant_To_Run_TestNG_Tests" default="usage" basedir=".">
 	
-<!-- ========== Initialize Property Variables =================================== -->
+<!-- ========== Initialize Property Variables ==================================== -->
 
 	<property environment="env" />
 	
@@ -23,7 +23,7 @@
 
 	<taskdef resource="testngtasks" classpathref="test.classpath"/>
 	
-<!-- ========== Target Clean - to delete existing compiled .classes, test reports ======= -->
+<!-- ========== Target Clean - to delete existing compiled .classes, test reports ========= -->
 	<target name="clean">
 		<echo message="Deleting Ant Build directory..." />
 		<delete dir="${test.dest}" /> 
@@ -51,7 +51,7 @@
 	  		listeners = "org.testng.reporters.FailedReporter, org.testng.reporters.DotTestListener"
 	  		haltonfailure="false">
 	  		<classfileset dir="${test.dest}">
-				<!-- =========== Specify which tests to run =========== -->
+				<!-- =========== Specify which tests to run ====================== -->
 	  		 	<!-- <include name="**/*.class" to run all the TestNG classes in the project"/> -->	  				  			
 	  			<include name="com/test1/tests/RTest.class" /> 
 	  			
