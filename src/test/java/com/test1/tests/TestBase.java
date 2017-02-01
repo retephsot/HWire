@@ -17,7 +17,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 
-import com.test1.pages.HomePage;
+import com.test1.pages.LogInPage;
 import com.test1.util.DataDrivenHelper;
 import com.test1.util.SendMail;
 import com.test1.util.WebDriverHelper;
@@ -25,7 +25,7 @@ import com.test1.util.WebDriverHelper;
 public class TestBase {
 
 	protected WebDriver driver;
-	protected HomePage homepage;
+	protected LogInPage loginpage;
 	protected Properties testConfig;
 	public String baseUrl;
 
@@ -42,7 +42,7 @@ public class TestBase {
 		baseUrl = testConfig.getProperty("baseUrl");
 		driver.get(baseUrl);
 
-		homepage = new HomePage(driver);
+		loginpage = new LogInPage(driver);
 
 	}
 
@@ -59,14 +59,5 @@ public class TestBase {
 	public void afterMethod() {
 
 		WebDriverHelper.quitDriver(driver);
-	}
-
-	public void afterSuite() throws Exception {
-
-		// Send emailable report email after test suite has been ran
-		SendMail.execute("emailable-report.html");
-		Thread.sleep(1000);
-		// Send emailable ant_report after test suit has been ran
-		SendMail.emailAntReport("emailable-report.html");
 	}
 }

@@ -261,13 +261,9 @@ InternetAddress(bcc[i]));
               }
 
               msg.saveChanges();
-
               Transport transport = session.getTransport("smtp");
-
               transport.connect(host, userName, passWord);
-
               transport.sendMessage(msg, msg.getAllRecipients());
-
               transport.close();
 
               return true;

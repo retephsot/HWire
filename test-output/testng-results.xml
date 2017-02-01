@@ -1,111 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36707" started-at="2017-01-05T22:59:30Z" finished-at="2017-01-05T23:00:07Z">
+  <suite name="Default suite" duration-ms="55439" started-at="2017-02-01T14:29:37Z" finished-at="2017-02-01T14:30:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36707" started-at="2017-01-05T22:59:30Z" finished-at="2017-01-05T23:00:07Z">
-      <class name="com.test1.tests.ShoePictureAvailableTest">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="beforSuite" is-config="true" duration-ms="12" started-at="2017-01-05T17:59:30Z" finished-at="2017-01-05T17:59:30Z">
+    <test name="Default test" duration-ms="55439" started-at="2017-02-01T14:29:37Z" finished-at="2017-02-01T14:30:32Z">
+      <class name="com.test1.tests.testSuccessfulBusinessRegistration">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforSuite" is-config="true" duration-ms="12" started-at="2017-02-01T09:29:37Z" finished-at="2017-02-01T09:29:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="beforeMethod" is-config="true" duration-ms="4775" started-at="2017-01-05T17:59:30Z" finished-at="2017-01-05T17:59:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforeMethod" is-config="true" duration-ms="10128" started-at="2017-02-01T09:29:37Z" finished-at="2017-02-01T09:29:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="isShoePictureAvailable(java.lang.String)[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="isShoePictureAvailable" duration-ms="3596" started-at="2017-01-05T17:59:35Z" data-provider="dataProvider" finished-at="2017-01-05T17:59:39Z">
+        <test-method status="PASS" signature="testSuccessfulBusinessAccountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="testSuccessfulBusinessAccountRegistration" duration-ms="15006" started-at="2017-02-01T09:29:47Z" data-provider="dataProvider" finished-at="2017-02-01T09:30:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[January]]>
+                <![CDATA[tester777777711001@mytest.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rodney]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[King]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[rodneypassword]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[rodneypassword]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[770-458-9764]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9999.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[30309.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Rrodney Vid Games]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3251 Peachtree Road]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[GA]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Retail]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Other]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- isShoePictureAvailable -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="afterMethod" is-config="true" duration-ms="960" started-at="2017-01-05T17:59:39Z" finished-at="2017-01-05T17:59:39Z">
+        </test-method> <!-- testSuccessfulBusinessAccountRegistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="afterMethod" is-config="true" duration-ms="949" started-at="2017-02-01T09:30:02Z" finished-at="2017-02-01T09:30:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="beforeMethod" is-config="true" duration-ms="4387" started-at="2017-01-05T17:59:39Z" finished-at="2017-01-05T17:59:44Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforeMethod" is-config="true" duration-ms="13585" started-at="2017-02-01T09:30:03Z" finished-at="2017-02-01T09:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="isShoePictureAvailable(java.lang.String)[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="isShoePictureAvailable" duration-ms="1967" started-at="2017-01-05T17:59:44Z" data-provider="dataProvider" finished-at="2017-01-05T17:59:46Z">
+        <test-method status="PASS" signature="testSuccessfulBusinessAccountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="testSuccessfulBusinessAccountRegistration" duration-ms="14771" started-at="2017-02-01T09:30:16Z" data-provider="dataProvider" finished-at="2017-02-01T09:30:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[October]]>
+                <![CDATA[tester9997777711001@tester.net]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Darrell]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gates]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[678-996-4435]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[30305]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Ddarrel Bbbq Atl]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[19951 Peachtree Rd]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Atlanta]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[GA]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Restaurant]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Casual]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- isShoePictureAvailable -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="afterMethod" is-config="true" duration-ms="856" started-at="2017-01-05T17:59:46Z" finished-at="2017-01-05T17:59:47Z">
+        </test-method> <!-- testSuccessfulBusinessAccountRegistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="afterMethod" is-config="true" duration-ms="773" started-at="2017-02-01T09:30:31Z" finished-at="2017-02-01T09:30:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="beforeMethod" is-config="true" duration-ms="4461" started-at="2017-01-05T17:59:47Z" finished-at="2017-01-05T17:59:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="isShoePictureAvailable(java.lang.String)[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="isShoePictureAvailable" duration-ms="14603" started-at="2017-01-05T17:59:51Z" data-provider="dataProvider" finished-at="2017-01-05T18:00:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[December]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The shoe picture is not available. expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The shoe picture is not available. expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.test1.tests.ShoePictureAvailableTest.isShoePictureAvailable(ShoePictureAvailableTest.java:18)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isShoePictureAvailable -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.ShoePictureAvailableTest@6d78f375]" name="afterMethod" is-config="true" duration-ms="877" started-at="2017-01-05T18:00:06Z" finished-at="2017-01-05T18:00:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.test1.tests.ShoePictureAvailableTest -->
+      </class> <!-- com.test1.tests.testSuccessfulBusinessRegistration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

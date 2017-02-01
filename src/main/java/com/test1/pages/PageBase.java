@@ -18,59 +18,57 @@ public class PageBase
 	{
 		this.driver = driver;
 	}
-	
-	public MonthPage ClickMonthLinkk(String month) throws InterruptedException
-	{
-	    driver.findElement(By.linkText(month)).click();
-	    Thread.sleep(1000);
-		return new MonthPage(driver);
-	}
-	
-	public boolean isEmailSubmitFieldAvailable () 
-	{	
-		boolean testresults = driver.findElement(By.id("remind_email_input")).isDisplayed();
-				
-		System.out.println("The test result is " + testresults);		
 		
-		return testresults;
-			
-	}
-	
-	public boolean isEmailSubmissionSuccessful (String email, String message) throws InterruptedException 
-	{	
-		driver.findElement(By.id("remind_email_input")).sendKeys(email);
-		Thread.sleep(500);
-		driver.findElement(By.id("remind_email_submit")).click();
-		waitForElementByCssSel(".flash.flash_success");
-		
-		boolean testresults = driver.findElement(By.cssSelector(".flash.flash_success")).getText().contains(message + " " + email);
-				
-		System.out.println("The test result is " + testresults);		
-		
-		return testresults;
-			
-	}
-	
 	public void waitForElementByID(String elementID) {
-		WebDriverWait wait = new WebDriverWait(driver, 25);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 		WebElement element = wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.id(elementID)));	
 	}
 	
+	public void waitForElementByIDPresense(String elementID) {
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebElement element = wait.until(
+				ExpectedConditions.presenceOfElementLocated(By.id(elementID)));	
+	}
+	
 	public void waitForElementByClass(String elementClass) {
-		WebDriverWait wait = new WebDriverWait(driver, 25);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 		WebElement element = wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.className(elementClass)));
 	}
 	
+	public void waitForElementByXPath(String elementXPath) {
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebElement element = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath(elementXPath)));
+	}
+	
+	public void waitForElementByXPathPresense(String elementXPath) {
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebElement element = wait.until(
+				ExpectedConditions.presenceOfElementLocated(By.xpath(elementXPath)));
+	}
+	
+	public void waitForElementByClassPresense(String elementClass) {
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebElement element = wait.until(
+				ExpectedConditions.presenceOfElementLocated(By.className(elementClass)));
+	}
+	
 	public void waitForElementByCssSel(String elementCSS) {
-		WebDriverWait wait = new WebDriverWait(driver, 25);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 		WebElement element = wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.cssSelector(elementCSS)));
 	}
 	
+	public void waitForElementByCssSelPresense(String elementCSS) {
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebElement element = wait.until(
+				ExpectedConditions.presenceOfElementLocated(By.cssSelector(elementCSS)));
+	}
+	
 	public void waitForElementByLinkText(String elementLinkText) {
-		WebDriverWait wait = new WebDriverWait(driver, 25);
+		WebDriverWait wait = new WebDriverWait(driver, 15);
 		WebElement element = wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.linkText(elementLinkText)));
 	}

@@ -3,29 +3,23 @@ package com.test1.util;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.Iterator;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
-// Reusable Excel Helper Class to work with and read/write from excel files
-// Base class for all other helper class that use excel
-
 public class ExcelHelper 
 {
-	private String filePath; //file path of the excel file
-	private FileInputStream fis; // file input stream to read data based on excel file
-	private Workbook workbook; // excel workbook variable to work with excel file
+	private String filePath;
+	private FileInputStream fis;
+	private Workbook workbook;
 	
-	// excel helper constructor which takes file path and initializes member variables
 	public ExcelHelper(String filePath)
 	{
 		this.filePath = filePath;
 		try
 		{
 			fis = new FileInputStream(filePath);
-			// create an apache POI workbook object for the excel file path provided
 			
 			workbook = WorkbookFactory.create(fis);
 			
@@ -42,7 +36,6 @@ public class ExcelHelper
 		return filePath;
 	}
 	
-	//Get total number of rows for a given excel sheet
 	public int getRowCount(String sheetName)
 	{
 		try
@@ -69,9 +62,7 @@ public class ExcelHelper
 		}
 		
 	}
-	
-	// Get cell data when excel sheet row number and column number are provided
-	//return "" (blank string) when specified cell doesn't exist
+
 	public String getCellData(String sheetName, int columnNumber, int rowNumber)
 	{
 		try
@@ -80,7 +71,6 @@ public class ExcelHelper
 		}
 		catch(NullPointerException e)
 		{
-			//Catch Null pointer exception and return blank string when specified cell doesn't exist
 			return "";
 		}
 		
@@ -114,8 +104,6 @@ public class ExcelHelper
 		
 	}
 	
-	// get row number based on cell value in specified column
-	// return -1 if there is no row with that cell value in specified column
 	public int getRowNumber(String sheetName, int columnNumber, String cellValue)
 	{
 		Iterator<Row> itr = workbook.getSheet(sheetName).rowIterator();
@@ -135,12 +123,9 @@ public class ExcelHelper
 						
 		}
 		
-		return -1;
-			
+		return -1;		
 	}
 	
-	// get column number based on cell value in specified row
-	// return -1 if there is no column with that cell value in specified row
 	public int getColumnNumber(String sheetName, int rowNumber, String cellValue)
 	{
 		try
@@ -161,11 +146,6 @@ public class ExcelHelper
 		catch(NullPointerException e)
 		{
 			return -1;
-		}
-		
-	}
-	
-	
-	
-
+		}	
+	}	
 }
