@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55439" started-at="2017-02-01T14:29:37Z" finished-at="2017-02-01T14:30:32Z">
+  <suite name="Default suite" duration-ms="43395" started-at="2017-02-09T14:42:29Z" finished-at="2017-02-09T14:43:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55439" started-at="2017-02-01T14:29:37Z" finished-at="2017-02-01T14:30:32Z">
+    <test name="Default test" duration-ms="43395" started-at="2017-02-09T14:42:29Z" finished-at="2017-02-09T14:43:13Z">
       <class name="com.test1.tests.testSuccessfulBusinessRegistration">
-        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforSuite" is-config="true" duration-ms="12" started-at="2017-02-01T09:29:37Z" finished-at="2017-02-01T09:29:37Z">
+        <test-method status="PASS" signature="beforSuite()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforSuite" is-config="true" duration-ms="12" started-at="2017-02-09T09:42:29Z" finished-at="2017-02-09T09:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforeMethod" is-config="true" duration-ms="10128" started-at="2017-02-01T09:29:37Z" finished-at="2017-02-01T09:29:47Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforeMethod" is-config="true" duration-ms="5958" started-at="2017-02-09T09:42:29Z" finished-at="2017-02-09T09:42:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulBusinessAccountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="testSuccessfulBusinessAccountRegistration" duration-ms="15006" started-at="2017-02-01T09:29:47Z" data-provider="dataProvider" finished-at="2017-02-01T09:30:02Z">
+        <test-method status="PASS" signature="testSuccessfulBusinessAccountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="testSuccessfulBusinessAccountRegistration" duration-ms="15309" started-at="2017-02-09T09:42:35Z" data-provider="dataProvider" finished-at="2017-02-09T09:42:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tester777777711001@mytest.com]]>
+                <![CDATA[tester777777711001b@mytest.com]]>
               </value>
             </param>
             <param index="1">
@@ -91,19 +91,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulBusinessAccountRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="afterMethod" is-config="true" duration-ms="949" started-at="2017-02-01T09:30:02Z" finished-at="2017-02-01T09:30:03Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="afterMethod" is-config="true" duration-ms="974" started-at="2017-02-09T09:42:51Z" finished-at="2017-02-09T09:42:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforeMethod" is-config="true" duration-ms="13585" started-at="2017-02-01T09:30:03Z" finished-at="2017-02-01T09:30:16Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="beforeMethod" is-config="true" duration-ms="5059" started-at="2017-02-09T09:42:52Z" finished-at="2017-02-09T09:42:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testSuccessfulBusinessAccountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="testSuccessfulBusinessAccountRegistration" duration-ms="14771" started-at="2017-02-01T09:30:16Z" data-provider="dataProvider" finished-at="2017-02-01T09:30:31Z">
+        <test-method status="FAIL" signature="testSuccessfulBusinessAccountRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="testSuccessfulBusinessAccountRegistration" duration-ms="15041" started-at="2017-02-09T09:42:57Z" data-provider="dataProvider" finished-at="2017-02-09T09:43:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[tester9997777711001@tester.net]]>
+                <![CDATA[tester9997777711001b@tester.net]]>
               </value>
             </param>
             <param index="1">
@@ -172,10 +172,49 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.test1.pages.JobSeekerPage.isCreateBusinessAccountSuccessful(JobSeekerPage.java:28)
+	at com.test1.tests.testSuccessfulBusinessRegistration.testSuccessfulBusinessAccountRegistration(testSuccessfulBusinessRegistration.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulBusinessAccountRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="afterMethod" is-config="true" duration-ms="773" started-at="2017-02-01T09:30:31Z" finished-at="2017-02-01T09:30:32Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.test1.tests.testSuccessfulBusinessRegistration@6d78f375]" name="afterMethod" is-config="true" duration-ms="815" started-at="2017-02-09T09:43:12Z" finished-at="2017-02-09T09:43:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
