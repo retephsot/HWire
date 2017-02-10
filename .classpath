@@ -16,4 +16,5 @@
 	<classpathentry kind="lib" path="C:/SeleniumJars/mail.jar"/>
 	<classpathentry kind="lib" path="C:/SeleniumJars/selenium-server-standalone-2.53.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
+	
 </classpath>
