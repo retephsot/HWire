@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Ant test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 24 12:06:07 EST 2017</td>
+<td>Started on:</td><td>Thu Feb 09 19:33:05 EST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>346 seconds (346882 ms)</td>
+<tr><td>Total time:</td><td>50 seconds (50982 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,52 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test1.tests.RTest.isShoeBlurbAvailable()'><b>isShoeBlurbAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: December</td>
-<td><div><pre>java.lang.AssertionError: The shoe information blurb is not available. expected [true] but found [false]
-	at com.test1.tests.RTest.isShoeBlurbAvailable(RTest.java:64)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472216456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1472216456'><pre>java.lang.AssertionError: The shoe information blurb is not available. expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.test1.tests.RTest.isShoeBlurbAvailable(RTest.java:64)
+<td title='com.test1.tests.RTest.testSuccessfulBusinessAccountRegistration()'><b>testSuccessfulBusinessAccountRegistration</b><br>Test class: com.test1.tests.RTest<br>Parameters: tester7777777110010@mytest.com, Rodney, King, rodneypassword, rodneypassword, 770-458-9764, 9999.0, 30309.0, Rrodney Vid Games, 3251 Peachtree Road, Atlanta, GA, Retail, Other</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;zipCode&quot;}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;rasta&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\Rastamon\AppData\Local\Temp\scoped_dir6500_14310}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 813e9f059883c3a00080686c552eb477
+*** Element info: {Using=id, value=zipCode}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.test1.pages.ZipCodePage.enterZipCode(ZipCodePage.java:16)
+	at com.test1.tests.RTest.testSuccessfulBusinessAccountRegistration(RTest.java:18)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace84113572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace84113572'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;zipCode&quot;}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;rasta&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\Rastamon\AppData\Local\Temp\scoped_dir6500_14310}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 813e9f059883c3a00080686c552eb477
+*** Element info: {Using=id, value=zipCode}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.test1.pages.ZipCodePage.enterZipCode(ZipCodePage.java:16)
+	at com.test1.tests.RTest.testSuccessfulBusinessAccountRegistration(RTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,18 +145,55 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.privateMain(TestNG.java:1325)
 	at org.testng.TestNG.main(TestNG.java:1294)
 </pre></div></td>
-<td>14</td>
+<td>17</td>
 <td>com.test1.tests.RTest@52d455b8</td></tr>
 <tr>
-<td title='com.test1.tests.RTest.isShoePictureAvailable()'><b>isShoePictureAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: December</td>
-<td><div><pre>java.lang.AssertionError: The shoe picture is not available. expected [true] but found [false]
-	at com.test1.tests.RTest.isShoePictureAvailable(RTest.java:86)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1810923540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1810923540'><pre>java.lang.AssertionError: The shoe picture is not available. expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.test1.tests.RTest.isShoePictureAvailable(RTest.java:86)
+<td title='com.test1.tests.RTest.testSuccessfulBusinessAccountRegistration()'><b>testSuccessfulBusinessAccountRegistration</b><br>Test class: com.test1.tests.RTest<br>Parameters: tester99977777110010@tester.net, Darrell, Gates, password1, password1, 678-996-4435, 9999, 30305, Ddarrel Bbbq Atl, 19951 Peachtree Rd, Atlanta, GA, Restaurant, Casual</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;zipCode&quot;}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;rasta&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\Rastamon\AppData\Local\Temp\scoped_dir6600_20931}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 4c2d38f8178e5ae807bc7cf2283535e8
+*** Element info: {Using=id, value=zipCode}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.test1.pages.ZipCodePage.enterZipCode(ZipCodePage.java:16)
+	at com.test1.tests.RTest.testSuccessfulBusinessAccountRegistration(RTest.java:18)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1871612052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1871612052'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;zipCode&quot;}
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 14.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;rasta&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_65&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\Rastamon\AppData\Local\Temp\scoped_dir6600_20931}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 4c2d38f8178e5ae807bc7cf2283535e8
+*** Element info: {Using=id, value=zipCode}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:403)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at com.test1.pages.ZipCodePage.enterZipCode(ZipCodePage.java:16)
+	at com.test1.tests.RTest.testSuccessfulBusinessAccountRegistration(RTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -144,156 +218,7 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.privateMain(TestNG.java:1325)
 	at org.testng.TestNG.main(TestNG.java:1294)
 </pre></div></td>
-<td>14</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isShoePriceAvailable()'><b>isShoePriceAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: December</td>
-<td><div><pre>java.lang.AssertionError: The shoe price is not available. expected [true] but found [false]
-	at com.test1.tests.RTest.isShoePriceAvailable(RTest.java:75)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1306246648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1306246648'><pre>java.lang.AssertionError: The shoe price is not available. expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.test1.tests.RTest.isShoePriceAvailable(RTest.java:75)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:773)
-	at org.testng.TestRunner.run(TestRunner.java:623)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.TestNG.privateMain(TestNG.java:1325)
-	at org.testng.TestNG.main(TestNG.java:1294)
-</pre></div></td>
-<td>15</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.test1.tests.RTest.isEmailSubmissionSuccessful()'><b>isEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: January, testing@123.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>3</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isEmailSubmissionSuccessful()'><b>isEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: February, abcd@1123.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>3</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isEmailSubmissionSuccessful()'><b>isEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: March, 3456@test.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>9</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isEmailSubmissionSuccessful()'><b>isEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: April, 890@vvv.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>4</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isEmailSubmissionSuccessful()'><b>isEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: May, testing@123.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>2</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isEmailSubmissionSuccessful()'><b>isEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: June, abcd@1123.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>2</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isEmailSubmissionSuccessful()'><b>isEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: July, 890@vvv.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>4</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isHomeEmailSubmissionSuccessful()'><b>isHomeEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: testing@123.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>2</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isHomeEmailSubmissionSuccessful()'><b>isHomeEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: abcd@1123.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>3</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isHomeEmailSubmissionSuccessful()'><b>isHomeEmailSubmissionSuccessful</b><br>Test class: com.test1.tests.RTest<br>Parameters: 3456@test.com, Thanks! We will notify you of our new shoes at this email:</td>
-<td></td>
-<td>4</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isShoeBlurbAvailable()'><b>isShoeBlurbAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: January</td>
-<td></td>
-<td>5</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isShoeBlurbAvailable()'><b>isShoeBlurbAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: November</td>
-<td></td>
-<td>2</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isShoePictureAvailable()'><b>isShoePictureAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: January</td>
-<td></td>
-<td>4</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isShoePictureAvailable()'><b>isShoePictureAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: October</td>
-<td></td>
-<td>3</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isShoePriceAvailable()'><b>isShoePriceAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: January</td>
-<td></td>
-<td>4</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.isShoePriceAvailable()'><b>isShoePriceAvailable</b><br>Test class: com.test1.tests.RTest<br>Parameters: October</td>
-<td></td>
-<td>3</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.verifyHomeSubmitEmailField()'><b>verifyHomeSubmitEmailField</b><br>Test class: com.test1.tests.RTest</td>
-<td></td>
-<td>0</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.verifySubmitEmailField()'><b>verifySubmitEmailField</b><br>Test class: com.test1.tests.RTest<br>Parameters: January</td>
-<td></td>
-<td>5</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.verifySubmitEmailField()'><b>verifySubmitEmailField</b><br>Test class: com.test1.tests.RTest<br>Parameters: February</td>
-<td></td>
-<td>1</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.verifySubmitEmailField()'><b>verifySubmitEmailField</b><br>Test class: com.test1.tests.RTest<br>Parameters: March</td>
-<td></td>
-<td>2</td>
-<td>com.test1.tests.RTest@52d455b8</td></tr>
-<tr>
-<td title='com.test1.tests.RTest.verifySubmitEmailField()'><b>verifySubmitEmailField</b><br>Test class: com.test1.tests.RTest<br>Parameters: April</td>
-<td></td>
-<td>0</td>
+<td>17</td>
 <td>com.test1.tests.RTest@52d455b8</td></tr>
 </table><p>
 </body>
